@@ -1,0 +1,77 @@
+{
+  "viewports": [
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 375,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": true
+    },
+    {
+      "width": 768,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": true
+    },
+    {
+      "width": 1024,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": false
+    },
+    {
+      "width": 1440,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": false
+    }
+  ],
+  "errors": [],
+  "links": [
+    "https://mgimo-pm.21-school.ru/",
+    "https://pk.odin.mgimo.ru/master/21",
+    "https://lka.mgimo.ru/",
+    "mailto:Mgimo_edu@21-school.ru"
+  ]
+}
