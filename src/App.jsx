@@ -32,10 +32,10 @@ const semesters = [
 ];
 
 const teachers = [
-  { name: 'Инна Красовская', initials: 'ИК', field: 'Управление продуктом', detail: 'Индустриальный руководитель программы. Руководит B2B-продуктами в SaaS-компании в США; ранее работала в ВТБ и Сбере.', photo: null },
-  { name: 'Виктор Ерохин', initials: 'ВЕ', field: 'Научно-исследовательская работа', detail: 'Доктор технических наук, профессор кафедры математических методов и бизнес-информатики МГИМО. Занимается научно-исследовательской подготовкой.', photo: null },
-  { name: 'Екатерина Чикулаева', initials: 'ЕЧ', field: 'Маркетинг цифровых продуктов', detail: 'Маркетинг-бизнес-партнёр 2ГИС. Работала над развитием агентств EMAILMATRIX и «Лидмашина».', photo: null },
-  { name: 'Станислав Дергунов', initials: 'СД', field: 'Цифровые бизнес-модели', detail: 'Руководитель продукта в Альфа-Банке. Ранее работал в Т-Банке и СберМаркете; специализируется на продуктах на стыке онлайн- и офлайн-сервисов.', photo: null },
+  { name: 'Инна Красовская', initials: 'ИК', field: 'Управление продуктом', detail: 'Индустриальный руководитель программы. Руководит B2B-продуктами в SaaS-компании в США; ранее работала в ВТБ и Сбере.', photo: 'images/teachers/inna-krasovskaya.jpeg' },
+  { name: 'Виктор Ерохин', initials: 'ВЕ', field: 'Научно-исследовательская работа', detail: 'Доктор технических наук, профессор кафедры математических методов и бизнес-информатики МГИМО. Занимается научно-исследовательской подготовкой.', photo: 'images/teachers/viktor-erokhin.png' },
+  { name: 'Екатерина Чикулаева', initials: 'ЕЧ', field: 'Маркетинг цифровых продуктов', detail: 'Маркетинг-бизнес-партнёр 2ГИС. Работала над развитием агентств EMAILMATRIX и «Лидмашина».', photo: 'images/teachers/ekaterina-chikulaeva.jpeg' },
+  { name: 'Станислав Дергунов', initials: 'СД', field: 'Цифровые бизнес-модели', detail: 'Руководитель продукта в Альфа-Банке. Ранее работал в Т-Банке и СберМаркете; специализируется на продуктах на стыке онлайн- и офлайн-сервисов.', photo: 'images/teachers/stanislav-dergunov.jpg' },
 ];
 
 const frequentlyAsked = [
@@ -189,7 +189,7 @@ function App() {
       </div></section>
 
       <section className="section section-light" id="teachers"><div className="container"><SectionTitle index="07" eyebrow="Преподаватели и эксперты" title="Люди, за которыми стоит программа">Академические знания и опыт специалистов цифровой индустрии – в одной образовательной команде.</SectionTitle>
-        <div className="teachers-grid">{teachers.map((t)=><article className="teacher-card" key={t.name}><div className="teacher-portrait">{t.photo?<img src={t.photo} alt={`Портрет: ${t.name}`} loading="lazy"/>:<span aria-hidden="true">{t.initials}</span>}</div><div className="teacher-info"><h3>{t.name}</h3><strong>{t.field}</strong><p>{t.detail}</p></div></article>)}</div>
+        <div className="teachers-grid">{teachers.map((t)=><article className="teacher-card" key={t.name}><div className={`teacher-portrait${t.photo ? ' has-photo' : ''}`}>{t.photo?<img src={`${import.meta.env.BASE_URL}${t.photo}`} alt={`Портрет: ${t.name}`} loading="lazy" decoding="async" width="600" height="660"/>:<span aria-hidden="true">{t.initials}</span>}</div><div className="teacher-info"><h3>{t.name}</h3><strong>{t.field}</strong><p>{t.detail}</p></div></article>)}</div>
         <a className="inline-link" href={links.school} target="_blank" rel="noopener noreferrer">Подробнее о преподавателях <ArrowUpRight size={16}/></a>
       </div></section>
 

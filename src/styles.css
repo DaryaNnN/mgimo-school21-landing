@@ -118,3 +118,7 @@
 @media(max-width:1050px){.audience-grid,.project-examples,.method-grid{grid-template-columns:1fr}.audience-card,.project-example,.method-card{padding:26px}.tool-glossary{grid-template-columns:repeat(2,minmax(0,1fr))}.format-logistics{grid-template-columns:1fr;gap:24px}.next-intake{align-items:flex-start;flex-direction:column}}
 @media(max-width:650px){.admission-resources{grid-template-columns:1fr;gap:32px}.content-subsection{margin-top:36px;padding-top:28px}.subsection-title{font-size:25px}.international-focus{padding:24px;gap:14px;flex-direction:column}.international-focus h3{font-size:23px}.audience-card,.project-example,.method-card{padding:24px}.next-intake{padding:24px}.next-intake .btn{width:100%}.hero-programme{font-size:15px}.hero-programme span{font-size:14px}.tool-glossary{gap:20px 16px}}
 @media(max-width:380px){.tool-glossary{grid-template-columns:1fr}}
+
+.teacher-portrait.has-photo:before{display:none}
+.teacher-portrait.has-photo{background:#e8f0ed}
+.teacher-portrait.has-photo img{display:block;object-position:50% 35%}

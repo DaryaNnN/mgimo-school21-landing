@@ -1,0 +1,160 @@
+{
+  "report": [
+    {
+      "width": 320,
+      "images": [
+        {
+          "src": "/images/teachers/inna-krasovskaya.jpeg",
+          "alt": "Портрет: Инна Красовская",
+          "width": 841,
+          "height": 801
+        },
+        {
+          "src": "/images/teachers/viktor-erokhin.png",
+          "alt": "Портрет: Виктор Ерохин",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "src": "/images/teachers/ekaterina-chikulaeva.jpeg",
+          "alt": "Портрет: Екатерина Чикулаева",
+          "width": 1029,
+          "height": 1029
+        },
+        {
+          "src": "/images/teachers/stanislav-dergunov.jpg",
+          "alt": "Портрет: Станислав Дергунов",
+          "width": 1566,
+          "height": 2082
+        }
+      ],
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 375,
+      "images": [
+        {
+          "src": "/images/teachers/inna-krasovskaya.jpeg",
+          "alt": "Портрет: Инна Красовская",
+          "width": 841,
+          "height": 801
+        },
+        {
+          "src": "/images/teachers/viktor-erokhin.png",
+          "alt": "Портрет: Виктор Ерохин",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "src": "/images/teachers/ekaterina-chikulaeva.jpeg",
+          "alt": "Портрет: Екатерина Чикулаева",
+          "width": 1029,
+          "height": 1029
+        },
+        {
+          "src": "/images/teachers/stanislav-dergunov.jpg",
+          "alt": "Портрет: Станислав Дергунов",
+          "width": 1566,
+          "height": 2082
+        }
+      ],
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "images": [
+        {
+          "src": "/images/teachers/inna-krasovskaya.jpeg",
+          "alt": "Портрет: Инна Красовская",
+          "width": 841,
+          "height": 801
+        },
+        {
+          "src": "/images/teachers/viktor-erokhin.png",
+          "alt": "Портрет: Виктор Ерохин",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "src": "/images/teachers/ekaterina-chikulaeva.jpeg",
+          "alt": "Портрет: Екатерина Чикулаева",
+          "width": 1029,
+          "height": 1029
+        },
+        {
+          "src": "/images/teachers/stanislav-dergunov.jpg",
+          "alt": "Портрет: Станислав Дергунов",
+          "width": 1566,
+          "height": 2082
+        }
+      ],
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "images": [
+        {
+          "src": "/images/teachers/inna-krasovskaya.jpeg",
+          "alt": "Портрет: Инна Красовская",
+          "width": 841,
+          "height": 801
+        },
+        {
+          "src": "/images/teachers/viktor-erokhin.png",
+          "alt": "Портрет: Виктор Ерохин",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "src": "/images/teachers/ekaterina-chikulaeva.jpeg",
+          "alt": "Портрет: Екатерина Чикулаева",
+          "width": 1029,
+          "height": 1029
+        },
+        {
+          "src": "/images/teachers/stanislav-dergunov.jpg",
+          "alt": "Портрет: Станислав Дергунов",
+          "width": 1566,
+          "height": 2082
+        }
+      ],
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "images": [
+        {
+          "src": "/images/teachers/inna-krasovskaya.jpeg",
+          "alt": "Портрет: Инна Красовская",
+          "width": 841,
+          "height": 801
+        },
+        {
+          "src": "/images/teachers/viktor-erokhin.png",
+          "alt": "Портрет: Виктор Ерохин",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "src": "/images/teachers/ekaterina-chikulaeva.jpeg",
+          "alt": "Портрет: Екатерина Чикулаева",
+          "width": 1029,
+          "height": 1029
+        },
+        {
+          "src": "/images/teachers/stanislav-dergunov.jpg",
+          "alt": "Портрет: Станислав Дергунов",
+          "width": 1566,
+          "height": 2082
+        }
+      ],
+      "overflow": false,
+      "accessibilityViolations": 0
+    }
+  ],
+  "errors": []
+}
