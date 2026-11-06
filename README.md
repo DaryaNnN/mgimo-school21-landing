@@ -21,7 +21,9 @@ npm run build
 
 Репозиторий: https://github.com/DaryaNnN/mgimo-school21-landing
 
-Планируемый адрес после деплоя: `https://daryannn.github.io/mgimo-school21-landing/` — пока не опубликован.
+Сайт опубликован: https://daryannn.github.io/mgimo-school21-landing/
+
+Деплой: https://github.com/DaryaNnN/mgimo-school21-landing/actions/runs/42248635655 — success. Публичная страница проверена: HTTP 200.
 
 GitHub Actions собирает и публикует сайт после push в `main`. Источник Pages — GitHub Actions. Проверки и ограничения описаны в `QA.md`.
 
