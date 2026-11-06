@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Check, ChevronDown, ChevronRight, Code2, Compass, Database, ExternalLink, Globe2, GraduationCap, Layers3, Mail, Menu, Search, ShieldCheck, Sparkles, TrendingUp, Users, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, Check, ChevronDown, ChevronRight, Code2, Compass, Database, ExternalLink, Globe2, GraduationCap, Info, Layers3, Mail, Menu, Search, ShieldCheck, Sparkles, TrendingUp, Users, X } from 'lucide-react';
 
 const links = {
   mgimo: 'https://pk.odin.mgimo.ru/master/21',
@@ -81,7 +81,7 @@ function App() {
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
       }
     };
-    const media = window.matchMedia('(max-width: 780px)');
+    const media = window.matchMedia('(max-width: 1100px)');
     const resize = () => { if (!media.matches) setMobileMenu(false); };
     document.addEventListener('keydown', close);
     media.addEventListener('change', resize);
@@ -102,6 +102,7 @@ function App() {
     </header>
 
     <main id="main">
+      <aside className="admission-notice" aria-label="Статус приёма заявок"><div className="container notice-content"><div className="notice-message"><Info size={28} aria-hidden="true"/><div><strong>Приём заявок на набор 2026 завершён</strong><p>Новые сроки уточняются</p></div></div><a href="#admissions">Условия поступления <ChevronRight size={18}/></a></div></aside>
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-orbit orbit-one" aria-hidden="true"/><div className="hero-orbit orbit-two" aria-hidden="true"/><div className="hero-globe" aria-hidden="true"><div className="globe-lat"/><div className="globe-long"/></div><div className="hero-point" aria-hidden="true"/>
         <div className="container hero-inner">
@@ -112,7 +113,6 @@ function App() {
           <div className="hero-metrics"><div><strong>2 года</strong><span>Продолжительность</span></div><div><strong>20–30 ч</strong><span>В неделю</span></div><div><strong>Гибридно</strong><span>Формат обучения</span></div><div><strong>2 диплома</strong><span>Результат обучения</span></div></div>
         </div>
       </section>
-      <div className="admission-notice"><div className="container notice-content"><div><span className="notice-dot"/><strong>Приём заявок на набор 2026 завершён</strong><span className="notice-sep"> · </span>Новые сроки уточняются</div><a href="#admissions">Условия поступления <ChevronRight size={15}/></a></div></div>
 
       <section className="section section-light" id="about">
         <div className="container"><SectionTitle index="02" eyebrow="Синергия двух школ" title={<>Два образовательных подхода<br/>Одна продуктовая профессия</>}>Продуктовый менеджмент требует понимания бизнеса, пользователя и технологий. Здесь эти компетенции дополняют друг друга.</SectionTitle>
@@ -164,9 +164,16 @@ function App() {
         <div className="faq-list">{frequentlyAsked.map(([q,a],i)=><article className="faq-item" key={q}><h3><button type="button" onClick={()=>setOpenFaq(v=>v===i?-1:i)} aria-expanded={openFaq===i} aria-controls={`faq-${i}`}>{q}<span aria-hidden="true">{openFaq===i?'−':'+'}</span></button></h3>{openFaq===i&&<p id={`faq-${i}`}>{a}</p>}</article>)}</div>
       </div></section>
 
-      <section className="closing-section" id="contacts"><div className="container"><span className="eyebrow eyebrow-on-dark">12 / Ваш следующий шаг</span><h2>Узнайте больше о поступлении на магистратуру</h2><p>Изучите официальные условия программы или свяжитесь с организаторами, чтобы уточнить информацию о следующей приёмной кампании.</p><div className="closing-actions"><a className="btn btn-mint" href={links.mgimo} target="_blank" rel="noopener noreferrer">Условия поступления <ArrowUpRight size={17}/></a><a className="btn btn-outline" href={links.email}>Задать вопрос <Mail size={17}/></a></div></div></section>
+      <section className="closing-section" id="contacts"><div className="container closing-layout"><div><span className="eyebrow eyebrow-on-dark">12 / Ваш следующий шаг</span><h2>Узнайте больше о поступлении на магистратуру</h2></div><div className="closing-copy"><p>Изучите официальные условия программы или свяжитесь с организаторами, чтобы уточнить информацию о следующей приёмной кампании.</p><div className="closing-actions"><a className="btn btn-mint" href={links.mgimo} target="_blank" rel="noopener noreferrer">Условия поступления <ArrowUpRight size={17}/></a><a className="btn btn-outline" href={links.email}>Задать вопрос <Mail size={17}/></a></div></div></div></section>
     </main>
-    <footer className="site-footer"><div className="container footer-layout"><div><a href="#top" className="brand footer-brand"><span>МГИМО</span><span className="brand-multiply">×</span><span>ШКОЛА 21</span></a><p>Управление цифровыми продуктами на международных рынках</p></div><div className="footer-links"><a href={links.mgimo} target="_blank" rel="noopener noreferrer">МГИМО <ArrowUpRight size={13}/></a><a href={links.school} target="_blank" rel="noopener noreferrer">Школа 21 <ArrowUpRight size={13}/></a><a href={links.email}>Контакты <Mail size={13}/></a></div></div><div className="container footer-disclosure">Подача документов — через официальный личный кабинет абитуриента МГИМО.</div></footer>
+    <footer className="site-footer">
+      <div className="container footer-layout">
+        <div className="footer-summary"><a href="#top" className="brand footer-brand"><span>МГИМО</span><span className="brand-multiply">×</span><span>ШКОЛА 21</span></a><p>Управление цифровыми продуктами на международных рынках</p></div>
+        <nav className="footer-links" aria-label="Официальные страницы"><span className="footer-label">О программе</span><a href={links.mgimo} target="_blank" rel="noopener noreferrer">МГИМО <ArrowUpRight size={16}/></a><a href={links.school} target="_blank" rel="noopener noreferrer">Школа 21 <ArrowUpRight size={16}/></a></nav>
+        <div className="footer-contact"><span className="footer-label">Контакты</span><a href={links.email}><Mail size={18}/><span>Mgimo_edu@21-school.ru</span></a></div>
+      </div>
+      <div className="container footer-disclosure">Подача документов — через <a href={links.admissions} target="_blank" rel="noopener noreferrer">официальный личный кабинет абитуриента МГИМО <ArrowUpRight size={14}/></a>.</div>
+    </footer>
   </>;
 }
 

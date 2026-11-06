@@ -1,6 +1,13 @@
 {
   "viewports": [
     {
+      "width": 320,
+      "scrollWidth": 320,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
+    },
+    {
       "width": 375,
       "scrollWidth": 375,
       "sections": 12,
@@ -27,9 +34,25 @@
       "sections": 12,
       "brokenAnchors": [],
       "violations": []
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "sections": 12,
+      "brokenAnchors": [],
+      "violations": []
     }
   ],
   "interactions": [
+    {
+      "width": 320,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": true
+    },
     {
       "width": 375,
       "practiceTabs": 5,
@@ -55,10 +78,19 @@
       "faq": 7,
       "discount": true,
       "keyboard": true,
-      "mobileMenu": false
+      "mobileMenu": true
     },
     {
       "width": 1440,
+      "practiceTabs": 5,
+      "semesterTabs": 4,
+      "faq": 7,
+      "discount": true,
+      "keyboard": true,
+      "mobileMenu": false
+    },
+    {
+      "width": 1920,
       "practiceTabs": 5,
       "semesterTabs": 4,
       "faq": 7,
