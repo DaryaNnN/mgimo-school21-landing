@@ -1,0 +1,20 @@
+name: Cancel stalled Pages deployment
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_id:
+        description: Pages deployment ID to cancel
+        required: true
+        type: string
+permissions:
+  pages: write
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEPLOYMENT_ID: ${{ inputs.deployment_id }}
+        run: gh api --method POST "repos/$GH_REPO/pages/deployments/$DEPLOYMENT_ID/cancel"
