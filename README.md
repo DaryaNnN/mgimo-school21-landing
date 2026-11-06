@@ -19,9 +19,9 @@ npm run build
 
 В `vite.config.js` для сборки с `GITHUB_PAGES=true` задан `base: '/mgimo-school21-landing/'`. Репозиторий GitHub должен называться `mgimo-school21-landing`, либо необходимо изменить `base` на фактическое имя.
 
-Репозиторий: https://github.com/DaryaNnN/mgimo-school21-landing
+Целевой репозиторий: `DaryaNnN/mgimo-school21-landing` (публикация ожидает предоставления доступа).
 
-Публичный адрес: https://daryannn.github.io/mgimo-school21-landing/
+Планируемый адрес после деплоя: `https://daryannn.github.io/mgimo-school21-landing/` — пока не опубликован.
 
 GitHub Actions собирает и публикует сайт после push в `main`. Источник Pages — GitHub Actions. Проверки и ограничения описаны в `QA.md`.
 
