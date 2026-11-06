@@ -48,7 +48,7 @@
       "width": 320,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": true
@@ -57,7 +57,7 @@
       "width": 375,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": true
@@ -66,7 +66,7 @@
       "width": 768,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": true
@@ -75,7 +75,7 @@
       "width": 1024,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": true
@@ -84,7 +84,7 @@
       "width": 1440,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": false
@@ -93,7 +93,7 @@
       "width": 1920,
       "practiceTabs": 5,
       "semesterTabs": 4,
-      "faq": 7,
+      "faq": 10,
       "discount": true,
       "keyboard": true,
       "mobileMenu": false
@@ -101,9 +101,12 @@
   ],
   "errors": [],
   "links": [
+    "mailto:Mgimo_edu@21-school.ru",
     "https://mgimo-pm.21-school.ru/",
-    "https://pk.odin.mgimo.ru/master/21",
+    "https://odin.mgimo.ru/pk/doc/26/master/vi/ucp_26.pdf",
+    "https://abiturient.mgimo.ru/pravila-priema",
     "https://lka.mgimo.ru/",
-    "mailto:Mgimo_edu@21-school.ru"
+    "https://pk.odin.mgimo.ru/master/21",
+    "https://abiturient.mgimo.ru/kontakty"
   ]
 }

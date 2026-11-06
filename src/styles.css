@@ -65,3 +65,56 @@
 .diploma,.teacher-info,.format-metrics>div{min-width:0}
 .diploma h3,.teacher-info strong{overflow-wrap:anywhere}
 @media(max-width:380px){.format-metrics{grid-template-columns:1fr}.format-metrics>div{padding-left:0;border-left:0}}
+
+/* Content extensions preserve the V3.2 palette and heading scale. */
+.hero-programme{max-width:780px;margin:0 0 24px;color:#fff;font-size:16px;line-height:1.65}
+.hero-programme span{display:block;color:#fff;font-size:14px;margin-top:7px}
+.content-subsection{margin-top:48px;padding-top:36px;border-top:1px solid #dce8e6}
+.subsection-title{font-size:28px;line-height:1.2;letter-spacing:-.035em;margin:0 0 22px;color:#14263c}
+.audience-grid,.project-examples,.method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.audience-card,.project-example,.method-card{min-width:0;background:#fff;border:1px solid #dce8e6;border-radius:12px;padding:28px}
+.audience-card>svg,.method-card>svg{color:#147d77;margin-bottom:14px}
+.audience-card h4,.project-example h4,.method-card h4{color:#14263c;font-size:20px;line-height:1.3;letter-spacing:-.025em;margin:0 0 12px}
+.audience-card p,.project-example p,.method-card p{color:#526779;font-size:16px;line-height:1.7;margin:0}
+.content-note{color:#526779;font-size:15px;line-height:1.75;margin:24px 0 0;max-width:1000px}
+.content-note strong{color:#14263c}
+.tool-glossary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin:28px 0 0}
+.tool-glossary>div{border-top:1px solid #cddfda;padding-top:16px}
+.tool-glossary dt{font-size:17px;font-weight:750;color:#14263c;margin-bottom:8px}
+.tool-glossary dd{font-size:15px;line-height:1.7;color:#526779;margin:0}
+.international-focus{display:flex;gap:22px;padding:28px;background:#fff;border:1px solid #dce8e6;border-radius:12px;margin-top:32px}
+.international-focus>svg{flex-shrink:0;color:#147d77}
+.international-focus h3{font-size:24px;line-height:1.3;margin:0 0 12px;letter-spacing:-.035em;color:#14263c}
+.international-focus p{font-size:16px;line-height:1.75;color:#526779;margin:0;max-width:950px}
+.project-examples{margin-top:24px}
+.project-example{display:flex;flex-direction:column;align-items:flex-start}
+.project-example .eyebrow{margin-bottom:20px}
+.project-example strong{color:#14263c;font-size:15px;line-height:1.6;margin-top:auto;padding-top:24px}
+.format-logistics{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;border-top:1px solid #dce8e6;margin-top:36px;padding-top:36px}
+.format-logistics h3{font-size:26px;line-height:1.25;letter-spacing:-.035em;margin:14px 0;color:#14263c}
+.format-logistics p{font-size:16px;line-height:1.75;color:#526779;margin:0}
+.format-logistics aside{background:#fff;border:1px solid #dce8e6;border-radius:12px;padding:26px;min-width:0}
+.format-logistics h4{font-size:18px;line-height:1.4;color:#14263c;margin:0 0 14px}
+.format-logistics ul{padding-left:20px;margin:0;color:#526779;font-size:15px;line-height:1.75}
+.format-logistics li+li{margin-top:8px}
+.format-logistics .inline-link{font-size:15px;line-height:1.5}
+.careers-intro{margin-bottom:20px}
+.payment-summary{font-size:16px;line-height:1.7;color:#526779;margin:0 0 20px;max-width:440px}
+.admission-resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:36px;padding-top:32px;border-top:1px solid #dce8e6}
+.admission-resources article{min-width:0}
+.admission-resources h3{font-size:26px;letter-spacing:-.035em;line-height:1.25;color:#14263c;margin:14px 0}
+.admission-resources p{font-size:16px;line-height:1.75;color:#526779;margin:0 0 14px}
+.admission-resources .inline-link{margin-top:6px;font-size:16px;line-height:1.5}
+.next-intake{display:flex;align-items:center;justify-content:space-between;gap:28px;background:#e6f5ef;border:1px solid #cee5db;border-radius:12px;padding:28px;margin-top:36px}
+.next-intake h3{font-size:23px;line-height:1.3;letter-spacing:-.035em;color:#14263c;margin:0 0 10px}
+.next-intake p{max-width:730px;font-size:16px;line-height:1.75;color:#526779;margin:0}
+.next-intake .btn{flex-shrink:0}
+.consultation-note{font-size:15px;line-height:1.75;color:#526779;max-width:1050px;margin:24px 0 0}
+.consultation-note strong{color:#14263c}
+.consultation-note a,.faq-item p a{color:#126c65;text-underline-offset:3px}
+.desktop-nav a[aria-current="location"]{color:#8ce7da;text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+.mobile-nav a[aria-current="location"]{color:#8ce7da;font-weight:750}
+[hidden]{display:none!important}
+@media(max-width:1050px){.audience-grid,.project-examples,.method-grid{grid-template-columns:1fr}.audience-card,.project-example,.method-card{padding:26px}.tool-glossary{grid-template-columns:repeat(2,minmax(0,1fr))}.format-logistics{grid-template-columns:1fr;gap:24px}.next-intake{align-items:flex-start;flex-direction:column}}
+@media(max-width:650px){.admission-resources{grid-template-columns:1fr;gap:32px}.content-subsection{margin-top:36px;padding-top:28px}.subsection-title{font-size:25px}.international-focus{padding:24px;gap:14px;flex-direction:column}.international-focus h3{font-size:23px}.audience-card,.project-example,.method-card{padding:24px}.next-intake{padding:24px}.next-intake .btn{width:100%}.hero-programme{font-size:15px}.hero-programme span{font-size:14px}.tool-glossary{gap:20px 16px}}
+@media(max-width:380px){.tool-glossary{grid-template-columns:1fr}}
